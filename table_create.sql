@@ -56,7 +56,7 @@ ALTER TABLE public.employees
 CREATE TABLE public.salaries
 (
     emp_no serial NOT NULL,
-    emp_title VARCHAR NOT NULL,
+    salary money NOT NULL,
     PRIMARY KEY (emp_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
@@ -101,5 +101,5 @@ COPY salaries
 FROM '/Users/Howard/Documents/GIT/homework/sql-challenge/EmployeeSQL/salaries.csv'
 DELIMITER ',' CSV HEADER;
 	
-SELECT Count(*) FROM employees;
-SELECT * FROM titles;
+SELECT * FROM employees;
+SELECT * FROM salaries;
