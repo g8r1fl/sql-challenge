@@ -131,3 +131,5 @@ dmypy.json
 # local files
 .DS_Store
 config.py
+.env
+
