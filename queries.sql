@@ -58,3 +58,7 @@ SELECT last_name, COUNT(last_name)
 FROM employees
 GROUP BY last_name
 ORDER BY COUNT(last_name) DESC;
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no = 499942
